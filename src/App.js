@@ -22,7 +22,6 @@ class App extends Component {
       title: this.state.item
     };
     const updatedItems = [...this.state.items, newItem];
-
     this.setState({
       items: updatedItems,
       item: "",
@@ -56,7 +55,7 @@ class App extends Component {
       <div className="container">
         <div className="row">
           <div className="col-10 mx-auto col-md-8 mt-5">
-            <h3 className="text-capitalize text-center">todo input</h3>
+            <h3 className="text-capitalize text-center">Life Goals</h3>
             <TodoInput
               item={this.state.item}
               handleChange={this.handleChange}
